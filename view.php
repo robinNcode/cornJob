@@ -20,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+
             </tbody>
     </div>
 
@@ -30,6 +30,17 @@
     <script src="http://robin.adovasoft.com/cdn/bootstrap.min.js"></script>
 
     <script>
+        
+        window.setTimeout(function() {
+            const countDownDate = 10;
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            console.log(distance);
+        }, 10000);
+
         window.setTimeout(function() {
             $.ajax({
                 url: 'get_data.php',
